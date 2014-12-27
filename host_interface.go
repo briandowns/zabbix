@@ -5,10 +5,10 @@ type (
 )
 
 const (
-	Agent InterfaceType = 1
-	SNMP  InterfaceType = 2
-	IPMI  InterfaceType = 3
-	JMX   InterfaceType = 4
+	Agent InterfaceType = 1 << iota
+	SNMP
+	IPMI
+	JMX
 )
 
 // https://www.zabbix.com/documentation/2.0/manual/appendix/api/hostinterface/definitions

@@ -13,38 +13,38 @@ type (
 )
 
 const (
-	ZabbixAgent       ItemType = 0
-	SNMPv1Agent       ItemType = 1
-	ZabbixTrapper     ItemType = 2
-	SimpleCheck       ItemType = 3
-	SNMPv2Agent       ItemType = 4
-	ZabbixInternal    ItemType = 5
-	SNMPv3Agent       ItemType = 6
-	ZabbixAgentActive ItemType = 7
-	ZabbixAggregate   ItemType = 8
-	WebItem           ItemType = 9
-	ExternalCheck     ItemType = 10
-	DatabaseMonitor   ItemType = 11
-	IPMIAgent         ItemType = 12
-	SSHAgent          ItemType = 13
-	TELNETAgent       ItemType = 14
-	Calculated        ItemType = 15
-	JMXAgent          ItemType = 16
+	ZabbixAgent ItemType = iota
+	SNMPv1Agent
+	ZabbixTrapper
+	SimpleCheck
+	SNMPv2Agent
+	ZabbixInternal
+	SNMPv3Agent
+	ZabbixAgentActive
+	ZabbixAggregate
+	WebItem
+	ExternalCheck
+	DatabaseMonitor
+	IPMIAgent
+	SSHAgent
+	TELNETAgent
+	Calculated
+	JMXAgent
 
-	Float     ValueType = 0
-	Character ValueType = 1
-	Log       ValueType = 2
-	Unsigned  ValueType = 3
-	Text      ValueType = 4
+	Float ValueType = iota
+	Character
+	Log
+	Unsigned
+	Text
 
-	Decimal     DataType = 0
-	Octal       DataType = 1
-	Hexadecimal DataType = 2
-	Boolean     DataType = 3
+	Decimal DataType = iota
+	Octal
+	Hexadecimal
+	Boolean
 
-	AsIs  DeltaType = 0
-	Speed DeltaType = 1
-	Delta DeltaType = 2
+	AsIs DeltaType = iota
+	Speed
+	Delta
 )
 
 // https://www.zabbix.com/documentation/2.0/manual/appendix/api/item/definitions

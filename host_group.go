@@ -9,8 +9,8 @@ type (
 )
 
 const (
-	NotInternal InternalType = 0
-	Internal    InternalType = 1
+	NotInternal InternalType = iota
+	Internal
 )
 
 // https://www.zabbix.com/documentation/2.0/manual/appendix/api/hostgroup/definitions

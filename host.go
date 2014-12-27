@@ -10,11 +10,11 @@ type (
 )
 
 const (
-	Available   AvailableType = 1
-	Unavailable AvailableType = 2
+	Available AvailableType = 1 << iota
+	Unavailable
 
-	Monitored   StatusType = 0
-	Unmonitored StatusType = 1
+	Monitored StatusType = iota
+	Unmonitored
 )
 
 // https://www.zabbix.com/documentation/2.0/manual/appendix/api/host/definitions
